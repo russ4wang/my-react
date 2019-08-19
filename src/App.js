@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-  render() {
+  render() {//使用JSX语法必须引入react
     return (
       <div>
         hello react
