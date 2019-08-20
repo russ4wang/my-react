@@ -32,25 +32,25 @@ class TodoList extends Component {//创建一个组件
             </Fragment>
         );
     }
-    handleInputChange(e) {
+    handleInputChange(e) {//输入框内容改变时获取输入框中的内容值
         console.log(e.target.value)//获取到输入的内容
         this.setState({//react里面提供的改变state中数据的方法
             inputValue: e.target.value
         })
     }
-    handleBtnClick() {
+    handleBtnClick() {//提交按钮
         this.setState({
             list: [...this.state.list, this.state.inputValue],
             inputValue: ''
         })
     }
-    handleItemDelete(index) {
+    handleItemDelete(index) {//点击删除
         // immutable：
         // state不允许直接做任何改变，需要先copy出来改变以后再赋值给state中的数据变量
-        const list = [...this.state.list];
-        list.splice(index, 1);
+        const list = [...this.state.list];//直接赋值一样的 const list = this.state.list
+        list.splice(index, 1);//删除掉索引为index的数组元素
         this.setState({
-            list: list
+            list: list,//再重新赋值给state里的list
         })
     }
 }
