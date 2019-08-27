@@ -6,6 +6,7 @@ class App extends Component {
       <div>
         hello react
         hello react
+        hello react
 
         397072917wm
 
