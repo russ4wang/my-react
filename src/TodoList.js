@@ -18,7 +18,7 @@ class TodoList extends Component {//创建一个组件
       <Fragment>
         <div>
           {/* value={this.state.inputValue}绑定数据,数据变化页面响应变化 */}
-          <label htmlFor='insertArea'>点击输入内容</label>
+          <label htmlFor='insertArea'>点击输入内容test</label>
           <input
             id='insertArea'
             className='input'
